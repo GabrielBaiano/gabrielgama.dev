@@ -17,8 +17,39 @@
 
     <div class="content">
         <h1 class="title">blog</h1>
-        <p>em breve...</p>
+
+        <div class="posts-list" id="posts-list">
+            <!-- Postagem padrão sobre o funcionamento -->
+            <div class="project-item">
+                <h3><a href="#" style="color: inherit; text-decoration: underline;">Como as postagens funcionam</a></h3>
+                <p class="meta">20/02/2026 — Local</p>
+                <p class="desc" style="font-size: 0.9em; margin-top: 5px;">Este blog é sincronizado automaticamente com
+                    o TabNews via GitHub Actions.</p>
+            </div>
+            <!-- Posts dinâmicos serão carregados aqui -->
+        </div>
     </div>
+
+    <script>
+        fetch('../data/posts.json')
+            .then(response => response.json())
+            .then(posts => {
+                const list = document.getElementById('posts-list');
+                if (posts && posts.length > 0) {
+                    posts.forEach(post => {
+                        const date = new Date(post.published_at).toLocaleDateString('pt-BR');
+                        const item = document.createElement('div');
+                        item.className = 'project-item';
+                        item.innerHTML = `
+                            <h3><a href="${post.url}" target="_blank" style="color: inherit; text-decoration: underline;">${post.title}</a></h3>
+                            <p class="meta">${date} — TabNews</p>
+                        `;
+                        list.appendChild(item);
+                    });
+                }
+            })
+            .catch(err => console.log('Nenhum post adicional encontrado.'));
+    </script>
 </body>
 
 </html>
