@@ -87,14 +87,16 @@ nav a:hover {
     color: #0066cc;
 }
 
-/* Shared History Section Styles (Work & Education) */
+/* Shared History Section Styles (Work, Education & Projects) */
 .work-section,
-.education-section {
+.education-section,
+.projects-section {
     margin-top: 45px;
 }
 
 .work-section h2,
-.education-section h2 {
+.education-section h2,
+.projects-section h2 {
     font-size: 1.4em;
     font-weight: bold;
     margin-bottom: 20px;
@@ -102,25 +104,29 @@ nav a:hover {
 }
 
 .work-item,
-.education-item {
+.education-item,
+.project-item {
     margin-bottom: 20px;
 }
 
 .work-item h3,
-.education-item h3 {
+.education-item h3,
+.project-item h3 {
     font-size: 1em;
     margin: 0 0 2px 0;
 }
 
 .work-item .meta,
-.education-item .meta {
+.education-item .meta,
+.project-item .meta {
     font-size: 0.85em;
     color: #666;
     margin-bottom: 4px;
 }
 
 .work-item .desc,
-.education-item .desc {
+.education-item .desc,
+.project-item .desc {
     font-size: 0.95em;
     color: #333;
 }
