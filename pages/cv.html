@@ -131,9 +131,32 @@
         h2,
         p,
         span,
-        li {
+        li,
+        a {
             user-select: text !important;
             -webkit-user-select: text !important;
+        }
+
+        @media print {
+            .print-btn-container {
+                display: none;
+            }
+
+            body {
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+
+            @page {
+                size: A4;
+                margin: 0;
+            }
+
+            .container {
+                padding: 2cm !important;
+                max-width: none !important;
+                margin: 0 !important;
+            }
         }
 
         .contact-info {
