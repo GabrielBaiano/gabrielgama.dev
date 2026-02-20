@@ -125,6 +125,33 @@ nav a:hover {
     color: #333;
 }
 
+.work-item .desc ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 8px 0;
+}
+
+.work-item .desc li {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 6px;
+    font-size: 0.95em;
+    color: #333;
+}
+
+.work-item .desc li::before {
+    content: "-";
+    position: absolute;
+    left: 0;
+    color: #666;
+}
+
+.work-item .desc p {
+    margin: 8px 0;
+    font-size: 0.95em;
+    color: #333;
+}
+
 /* Show More Toggle */
 #work-toggle {
     display: none;
