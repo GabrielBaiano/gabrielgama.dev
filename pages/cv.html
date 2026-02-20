@@ -127,6 +127,40 @@
             font-weight: bold;
         }
 
+        @page {
+            size: A4;
+            margin: 0 !important;
+        }
+
+        @media print {
+            .print-btn-container {
+                display: none !important;
+            }
+
+            body {
+                padding: 0 !important;
+                margin: 0 !important;
+                background: white !important;
+            }
+
+            .container {
+                padding: 2cm !important;
+                max-width: none !important;
+                margin: 0 auto !important;
+                box-shadow: none !important;
+            }
+
+            a {
+                text-decoration: none !important;
+                color: black !important;
+            }
+
+            a::after {
+                content: "" !important;
+                /* Prevent browser from showing URL next to link */
+            }
+        }
+
         h1,
         h2,
         p,
@@ -135,28 +169,6 @@
         a {
             user-select: text !important;
             -webkit-user-select: text !important;
-        }
-
-        @media print {
-            .print-btn-container {
-                display: none;
-            }
-
-            body {
-                padding: 0 !important;
-                margin: 0 !important;
-            }
-
-            @page {
-                size: A4;
-                margin: 0;
-            }
-
-            .container {
-                padding: 2cm !important;
-                max-width: none !important;
-                margin: 0 !important;
-            }
         }
 
         .contact-info {
