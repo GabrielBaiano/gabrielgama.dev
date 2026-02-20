@@ -108,6 +108,13 @@
             <label for="work-toggle" class="toggle-label"></label>
         </div>
 
+        <div class="posts-section" id="posts-container" style="display: none;">
+            <h2>* posts (tabnews)</h2>
+            <div class="posts-list" id="posts-list">
+                <!-- Posts will be loaded here via JS -->
+            </div>
+        </div>
+
         <div class="education-section">
             <h2>* education</h2>
 
@@ -131,6 +138,30 @@
             <p>por que tão simples? é porque eu acho que o minimalismo está na moda!</p>
         </div>
     </div>
+
+    <script>
+        fetch('data/posts.json')
+            .then(response => response.json())
+            .then(posts => {
+                if (posts && posts.length > 0) {
+                    const container = document.getElementById('posts-container');
+                    const list = document.getElementById('posts-list');
+                    container.style.display = 'block';
+
+                    posts.forEach(post => {
+                        const date = new Date(post.published_at).toLocaleDateString('pt-BR');
+                        const item = document.createElement('div');
+                        item.className = 'work-item'; // Reusing work-item styles
+                        item.innerHTML = `
+                            <h3><a href="${post.url}" target="_blank" style="color: inherit; text-decoration: underline;">${post.title}</a></h3>
+                            <p class="meta">${date}</p>
+                        `;
+                        list.appendChild(item);
+                    });
+                }
+            })
+            .catch(err => console.log('No posts found yet or error loading JSON.'));
+    </script>
 </body>
 
 </html>
