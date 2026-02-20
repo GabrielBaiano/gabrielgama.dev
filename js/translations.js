@@ -38,7 +38,15 @@ const translations = {
         "cv-summary-text": "Desenvolvedor Front-End com mais de 4 anos de experiência atuando em ambientes corporativos e projetos freelance. Especialista em criar interfaces modernas, responsivas e orientadas ao cliente, com sólido conhecimento em React, Next.js, TypeScript e ecossistema mobile.",
         "cv-experience": "Experiência Profissional",
         "cv-education": "Educação",
-        "cv-print": "IMPRIMIR / SALVAR PDF"
+        "cv-print": "IMPRIMIR / SALVAR PDF",
+        "section-languages": "* languages",
+        "lang-pt": "Português: Nativo / Fluente",
+        "lang-en": "Inglês: Avançado",
+        "lang-it": "Italiano: Básico",
+        "lang-fr": "Francês: Básico",
+        "section-differentiators": "* differentiators",
+        "diff-desc": "Foco em arquitetura escalável, código limpo e experiência de usuário premium.",
+        "cv-languages": "Idiomas"
     },
     en: {
         "nav-portfolio": "portfolio",
@@ -79,6 +87,14 @@ const translations = {
         "cv-summary-text": "Front-End Developer with over 4 years of experience in corporate environments and freelance projects. Specialist in creating modern, responsive, and client-oriented interfaces, with solid knowledge in React, Next.js, TypeScript, and the mobile ecosystem.",
         "cv-experience": "Professional Experience",
         "cv-education": "Education",
-        "cv-print": "PRINT / SAVE PDF"
+        "cv-print": "PRINT / SAVE PDF",
+        "section-languages": "* languages",
+        "lang-pt": "Portuguese: Native / Fluent",
+        "lang-en": "English: Advanced",
+        "lang-it": "Italiano: Basic",
+        "lang-fr": "French: Basic",
+        "section-differentiators": "* differentiators",
+        "diff-desc": "Focus on scalable architecture, clean code, and premium user experience.",
+        "cv-languages": "Languages"
     }
 };
