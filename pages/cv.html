@@ -176,15 +176,17 @@
 
 <body>
     <div class="print-btn-container">
-        <button class="print-btn" onclick="window.print()">IMPRIMIR / SALVAR PDF</button>
+        <span class="lang-toggle" style="margin-right: 20px;">[ <span id="btn-en" class="lang-btn">EN</span> / <span
+                id="btn-pt" class="lang-btn">PT</span> ]</span>
+        <button class="print-btn" onclick="window.print()" data-i18n="cv-print">IMPRIMIR / SALVAR PDF</button>
     </div>
 
     <div class="container">
         <header>
-            <h1>Gabriel Nascimento Gama</h1>
-            <div class="subtitle">Desenvolvedor Front-End Pleno</div>
+            <h1 data-i18n="title">Gabriel Nascimento Gama</h1>
+            <div class="subtitle" data-i18n="role">Desenvolvedor Front-End Pleno</div>
             <div class="contact-info">
-                <span>📍 São Paulo, Brasil</span>
+                <span>📍 <span data-i18n="location">São Paulo, Brasil</span></span>
                 <a href="mailto:gabrielgamanascimento@gmail.com">📧 gabrielgamanascimento@gmail.com</a>
                 <a href="https://linkedin.com/in/gabriel-gama-6301633b2/" target="_blank">🔗
                     linkedin.com/in/gabriel-gama-6301633b2/</a>
@@ -193,8 +195,8 @@
         </header>
 
         <section>
-            <h2>Resumo Profissional</h2>
-            <p style="font-size: 10pt; margin: 0;">
+            <h2 data-i18n="cv-professional-summary">Resumo Profissional</h2>
+            <p style="font-size: 10pt; margin: 0;" data-i18n="cv-summary-text">
                 Desenvolvedor Front-End com mais de 4 anos de experiência atuando em ambientes corporativos e projetos
                 freelance.
                 Especialista em criar interfaces modernas, responsivas e orientadas ao cliente, com sólido conhecimento
@@ -204,16 +206,16 @@
         </section>
 
         <section>
-            <h2>Experiência Profissional</h2>
+            <h2 data-i18n="cv-experience">Experiência Profissional</h2>
 
             <div class="item">
                 <div class="item-header">
                     <span class="item-title">Flash</span>
                     <span class="item-date">Jun 2025 – Presente</span>
                 </div>
-                <div class="item-subtitle">Desenvolvedor Front-end Pleno</div>
+                <div class="item-subtitle" data-i18n="role">Desenvolvedor Front-end Pleno</div>
                 <ul class="item-desc">
-                    <li>Atuação como desenvolvedor front-end pleno em tempo integral.</li>
+                    <li data-i18n="work-flash-desc">Atuação como desenvolvedor front-end pleno em tempo integral.</li>
                 </ul>
             </div>
 
@@ -222,12 +224,17 @@
                     <span class="item-title">Agência YellowHood</span>
                     <span class="item-date">Out 2025 – Fev 2026</span>
                 </div>
-                <div class="item-subtitle">Desenvolvedor Front-end Pleno (Consultor)</div>
+                <div class="item-subtitle" data-i18n="work-yellowhood-role">Desenvolvedor Front-end Pleno (Consultor)
+                </div>
                 <ul class="item-desc">
-                    <li>Definição da arquitetura e estruturação do Front-end do produto principal da empresa.</li>
-                    <li>Desenvolvimento de interfaces modernas e responsivas utilizando React/Next.js e TypeScript.</li>
-                    <li>Levantamento de requisitos e alinhamento de expectativas com stakeholders.</li>
-                    <li>Consultoria na escolha de bibliotecas, ferramentas de estilização e padrões de gerenciamento de
+                    <li data-i18n="work-yellowhood-li1">Definição da arquitetura e estruturação do Front-end do produto
+                        principal da empresa.</li>
+                    <li data-i18n="work-yellowhood-li2">Desenvolvimento de interfaces modernas e responsivas utilizando
+                        React/Next.js e TypeScript.</li>
+                    <li data-i18n="work-yellowhood-li3">Levantamento de requisitos e alinhamento de expectativas com
+                        stakeholders.</li>
+                    <li data-i18n="work-yellowhood-li4">Consultoria na escolha de bibliotecas, ferramentas de
+                        estilização e padrões de gerenciamento de
                         estado.</li>
                 </ul>
             </div>
@@ -237,25 +244,29 @@
                     <span class="item-title">Compass UOL</span>
                     <span class="item-date">Out 2024 – Abr 2025</span>
                 </div>
-                <div class="item-subtitle">Estágio Desenvolvedor Mobile</div>
+                <div class="item-subtitle" data-i18n="work-compass-role">Estágio Desenvolvedor Mobile</div>
                 <ul class="item-desc">
-                    <li>Capacitação intensiva em React Native e TypeScript para desenvolvimento mobile.</li>
-                    <li>Desenvolvimento de projetos práticos (labs) focando em interfaces e navegação.</li>
-                    <li>Aprendizado do ciclo de vida mobile, consumo de APIs e tipagem segura.</li>
-                    <li>Uso de metodologias ágeis e ferramentas de versionamento em ambiente corporativo.</li>
+                    <li data-i18n="work-compass-li1">Capacitação intensiva em React Native e TypeScript para
+                        desenvolvimento mobile.</li>
+                    <li data-i18n="work-compass-li2">Desenvolvimento de projetos práticos (labs) focando em interfaces e
+                        navegação.</li>
+                    <li data-i18n="work-compass-li3">Aprendizado do ciclo de vida mobile, consumo de APIs e tipagem
+                        segura.</li>
+                    <li data-i18n="work-compass-li4">Uso de metodologias ágeis e ferramentas de versionamento em
+                        ambiente corporativo.</li>
                 </ul>
             </div>
         </section>
 
         <section>
-            <h2>Educação</h2>
+            <h2 data-i18n="cv-education">Educação</h2>
 
             <div class="item">
                 <div class="item-header">
                     <span class="item-title">UNESP - Universidade Estadual Paulista</span>
                     <span class="item-date">Fev 2026 – o momento</span>
                 </div>
-                <div class="item-subtitle">Mestrado, Ciência da Computação</div>
+                <div class="item-subtitle" data-i18n="edu-unesp-role">Mestrado, Ciência da Computação</div>
             </div>
 
             <div class="item">
@@ -263,7 +274,7 @@
                     <span class="item-title">Faculdade Facint</span>
                     <span class="item-date">Set 2022 – Dez 2025</span>
                 </div>
-                <div class="item-subtitle">CST, Análise e Desenvolvimento de Sistemas</div>
+                <div class="item-subtitle" data-i18n="edu-facint-role">CST, Análise e Desenvolvimento de Sistemas</div>
             </div>
 
             <div class="item">
@@ -271,10 +282,30 @@
                     <span class="item-title">Universidade do Estado do Pará - UEPA</span>
                     <span class="item-date">Out 2020 – Jun 2022</span>
                 </div>
-                <div class="item-subtitle">CST, Tecnologia e Processamento de Alimentos</div>
+                <div class="item-subtitle" data-i18n="edu-uepa-role">CST, Tecnologia e Processamento de Alimentos</div>
             </div>
         </section>
     </div>
+
+    <script src="../js/translations.js"></script>
+    <script src="../js/i18n.js"></script>
+    <style>
+        .lang-toggle {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .lang-btn {
+            cursor: pointer;
+            padding: 0 5px;
+        }
+
+        .lang-btn.active {
+            color: #1a1a1a;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
 </body>
 
 </html>

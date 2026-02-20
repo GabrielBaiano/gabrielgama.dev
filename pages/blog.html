@@ -10,26 +10,36 @@
 
 <body>
     <nav>
-        <a href="../index.html"><span class="key">[h]</span> portfólio</a>
-        <a href="blog.html"><span class="key">[b]</span> blog</a>
-        <a href="projects.html"><span class="key">[p]</span> projects</a>
+        <a href="../index.html"><span class="key">[h]</span> <span data-i18n="nav-portfolio">portfólio</span></a>
+        <a href="blog.html"><span class="key">[b]</span> <span data-i18n="nav-blog">blog</span></a>
+        <a href="projects.html"><span class="key">[p]</span> <span data-i18n="nav-projects">projects</span></a>
+        <span class="lang-toggle">/ [ <span id="btn-en" class="lang-btn">EN</span>/<span id="btn-pt"
+                class="lang-btn">PT</span> ]</span>
     </nav>
 
     <div class="content">
-        <h1 class="title">blog</h1>
+        <h1 class="title" data-i18n="nav-blog">blog</h1>
+
+        <p id="blog-en-disclaimer"
+            style="display: none; color: #666; font-size: 0.9em; font-style: italic; margin-bottom: 15px;"
+            data-i18n="blog-en-disclaimer">Note: All posts are originally written in Portuguese.</p>
 
         <div class="posts-list" id="posts-list">
             <!-- Postagem padrão sobre o funcionamento -->
             <div class="project-item">
-                <h3><a href="#" style="color: inherit; text-decoration: underline;">Como as postagens funcionam</a></h3>
+                <h3><a href="#" style="color: inherit; text-decoration: underline;" data-i18n="blog-how-it-works">Como
+                        as postagens funcionam</a></h3>
                 <p class="meta">20/02/2026 — Local</p>
-                <p class="desc" style="font-size: 0.9em; margin-top: 5px;">Este blog é sincronizado automaticamente com
+                <p class="desc" style="font-size: 0.9em; margin-top: 5px;" data-i18n="blog-disclaimer">Este blog é
+                    sincronizado automaticamente com
                     o TabNews via GitHub Actions.</p>
             </div>
             <!-- Posts dinâmicos serão carregados aqui -->
         </div>
     </div>
 
+    <script src="../js/translations.js"></script>
+    <script src="../js/i18n.js"></script>
     <script>
         fetch('../data/posts.json')
             .then(response => response.json())
@@ -37,7 +47,7 @@
                 const list = document.getElementById('posts-list');
                 if (posts && posts.length > 0) {
                     posts.forEach(post => {
-                        const date = new Date(post.published_at).toLocaleDateString('pt-BR');
+                        const date = new Date(post.published_at).toLocaleDateString(document.documentElement.lang === 'en' ? 'en-US' : 'pt-BR');
                         const item = document.createElement('div');
                         item.className = 'project-item';
                         item.innerHTML = `

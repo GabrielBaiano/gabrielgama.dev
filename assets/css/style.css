@@ -30,6 +30,22 @@ nav a:hover {
     text-decoration: underline;
 }
 
+.lang-toggle {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.lang-btn {
+    cursor: pointer;
+    padding: 0 2px;
+}
+
+.lang-btn.active {
+    color: #1a1a1a;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 .title {
     font-size: 2.2em;
     font-weight: bold;

@@ -10,30 +10,33 @@
 
 <body>
     <nav>
-        <a href="index.html"><span class="key">[h]</span> portfólio</a>
-        <a href="pages/blog.html"><span class="key">[b]</span> blog</a>
-        <a href="pages/projects.html"><span class="key">[p]</span> projects</a>
+        <a href="index.html"><span class="key">[h]</span> <span data-i18n="nav-portfolio">portfólio</span></a>
+        <a href="pages/blog.html"><span class="key">[b]</span> <span data-i18n="nav-blog">blog</span></a>
+        <a href="pages/projects.html"><span class="key">[p]</span> <span data-i18n="nav-projects">projects</span></a>
+        <span class="lang-toggle">/ [ <span id="btn-en" class="lang-btn">EN</span>/<span id="btn-pt"
+                class="lang-btn">PT</span> ]</span>
     </nav>
 
     <div class="content">
-        <h1 class="title">Gabriel Nascimento Gama</h1>
+        <h1 class="title" data-i18n="title">Gabriel Nascimento Gama</h1>
 
         <div class="info">
-            <p><span class="icon">📍</span> São Paulo, Brasil</p>
-            <p><span class="icon">🏢</span> Desenvolvedor Front-End (pleno)</p>
+            <p><span class="icon">📍</span> <span data-i18n="location">São Paulo, Brasil</span></p>
+            <p><span class="icon">🏢</span> <span data-i18n="role">Desenvolvedor Front-End (pleno)</span></p>
         </div>
 
         <div class="intro">
-            <p>
+            <p data-i18n="intro">
                 Sou Desenvolvedor Front-End com mais de 4 anos de experiência atuando em ambientes corporativos e também
                 em projetos freelance, o que me proporcionou uma visão ampla tanto de processos estruturados quanto de
                 entregas ágeis e orientadas ao cliente.
             </p>
-            <a href="pages/cv.html" class="download-btn" target="_blank">baixar currículo (.pdf)</a>
+            <a href="pages/cv.html" class="download-btn" target="_blank" data-i18n="download-cv">baixar currículo
+                (.pdf)</a>
         </div>
 
         <div class="contact-section">
-            <h2>* contact</h2>
+            <h2 data-i18n="section-contact">* contact</h2>
             <div class="contact-links">
                 <a href="https://github.com/GabrielBaiano" target="_blank">github</a>
                 <a href="https://www.linkedin.com/in/gabriel-gama-6301633b2/" target="_blank">linkedin</a>
@@ -44,29 +47,34 @@
         </div>
 
         <div class="work-section">
-            <h2>* work</h2>
+            <h2 data-i18n="section-work">* work</h2>
 
             <!-- Últimos 3 trabalhos -->
             <div class="work-item">
                 <h3>Flash (Atual)</h3>
-                <p class="meta">Desenvolvedor Front-end Pleno (Jun 2025 - Presente)</p>
+                <p class="meta" data-i18n="work-flash-role">Desenvolvedor Front-end Pleno (Jun 2025 - Presente)</p>
                 <div class="desc">
-                    <p>Atuação como desenvolvedor front-end pleno em tempo integral.</p>
+                    <p data-i18n="work-flash-desc">Atuação como desenvolvedor front-end pleno em tempo integral.</p>
                 </div>
             </div>
 
             <div class="work-item">
                 <h3>Agência YellowHood</h3>
-                <p class="meta">Desenvolvedor Front-end Pleno (Consultor) (Out 2025 - Fev 2026)</p>
+                <p class="meta" data-i18n="work-yellowhood-role">Desenvolvedor Front-end Pleno (Consultor) (Out 2025 -
+                    Fev 2026)</p>
                 <div class="desc">
                     <ul>
-                        <li>Fui responsável pela definição da arquitetura e estruturação do Front-end do produto
+                        <li data-i18n="work-yellowhood-li1">Fui responsável pela definição da arquitetura e estruturação
+                            do Front-end do produto
                             principal da empresa.</li>
-                        <li>Desenvolvimento de interfaces modernas e responsivas utilizando React/Next.js e TypeScript,
+                        <li data-i18n="work-yellowhood-li2">Desenvolvimento de interfaces modernas e responsivas
+                            utilizando React/Next.js e TypeScript,
                             focando em uma experiência de usuário fluida e intuitiva.</li>
-                        <li>Atuação direta no levantamento de requisitos e alinhamento de expectativas com stakeholders,
+                        <li data-i18n="work-yellowhood-li3">Atuação direta no levantamento de requisitos e alinhamento
+                            de expectativas com stakeholders,
                             traduzindo necessidades de negócio em soluções técnicas eficientes.</li>
-                        <li>Consultoria na escolha de bibliotecas, ferramentas de estilização (como Tailwind CSS) e
+                        <li data-i18n="work-yellowhood-li4">Consultoria na escolha de bibliotecas, ferramentas de
+                            estilização (como Tailwind CSS) e
                             padrões de gerenciamento de estado para otimizar o fluxo de desenvolvimento.</li>
                     </ul>
                 </div>
@@ -74,16 +82,20 @@
 
             <div class="work-item">
                 <h3>Compass UOL</h3>
-                <p class="meta">Estágio Desenvolvedor Mobile (Out 2024 - Abr 2025)</p>
+                <p class="meta" data-i18n="work-compass-role">Estágio Desenvolvedor Mobile (Out 2024 - Abr 2025)</p>
                 <div class="desc">
                     <ul>
-                        <li>Participação em programa intensivo de capacitação técnica, com foco no domínio de React
+                        <li data-i18n="work-compass-li1">Participação em programa intensivo de capacitação técnica, com
+                            foco no domínio de React
                             Native e TypeScript para o desenvolvimento de aplicações mobile.</li>
-                        <li>Desenvolvimento de projetos práticos de simulação (labs), focando na criação de interfaces
+                        <li data-i18n="work-compass-li2">Desenvolvimento de projetos práticos de simulação (labs),
+                            focando na criação de interfaces
                             responsivas e na implementação de fluxos de navegação complexos.</li>
-                        <li>Aprendizado prático sobre o ciclo de vida de aplicações mobile, desde a prototipagem até o
+                        <li data-i18n="work-compass-li3">Aprendizado prático sobre o ciclo de vida de aplicações mobile,
+                            desde a prototipagem até o
                             consumo de APIs, garantindo a tipagem segura de dados com o uso de TypeScript.</li>
-                        <li>Capacitação em metodologias ágeis e ferramentas de versionamento, ambiente de aprendizado
+                        <li data-i18n="work-compass-li4">Capacitação em metodologias ágeis e ferramentas de
+                            versionamento, ambiente de aprendizado
                             contínuo para simular o fluxo de entrega de grandes projetos reais.</li>
                     </ul>
                 </div>
@@ -93,6 +105,8 @@
             <input type="checkbox" id="work-toggle">
 
             <div class="more-work">
+                <!-- Translation for additional items would go here, manually adding keys for simplicity in this demo if needed -->
+                <!-- For now, keeping the top 3 as principal as they are most visible -->
                 <div class="work-item">
                     <h3>TECHSOLUTION</h3>
                     <p class="meta">Desenvolvedor Front-end Júnior (Mai 2023 - Nov 2024)</p>
@@ -110,97 +124,46 @@
                         </ul>
                     </div>
                 </div>
-
-                <div class="work-item">
-                    <h3>Emporio 24h</h3>
-                    <p class="meta">Desenvolvedor Front-end Freelancer (Mai 2021 - Jul 2023)</p>
-                    <div class="desc">
-                        <ul>
-                            <li>Desenvolvimento e manutenção de um Web App de delivery personalizado, focado na
-                                experiência do usuário e otimização de pedidos.</li>
-                            <li>Criação de automações para o sistema de inventário, reduzindo erros manuais e aumentando
-                                a eficiência do estoque.</li>
-                            <li>Suporte contínuo e evolução do sistema com novas funcionalidades, garantindo
-                                estabilidade e escalabilidade ao longo dos anos.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="work-item">
-                    <h3>Transição de Carreira</h3>
-                    <p class="meta">Pausa na Carreira (Jan 2023 - Mai 2023)</p>
-                    <div class="desc">
-                        <p>Tirei um tempo para me preparar para uma transição de carreira da área de qualidade de
-                            produção para desenvolvimento de software. Até então estava coletando experiencia em
-                            trabalho como freelance!</p>
-                    </div>
-                </div>
-
-                <div class="work-item">
-                    <h3>Schultz Palmitos</h3>
-                    <p class="meta">Analista de Qualidade Pleno (Jul 2022 - Dez 2022)</p>
-                    <div class="desc">
-                        <ul>
-                            <li>Liderei a implementação da norma internacional IFS foods (International Featured
-                                Standards), estabelecendo padrões de governança de dados e segurança alimentar.</li>
-                            <li>Otimizei processos reestruturando o fluxo da linha de produção, eliminando gargalos e
-                                aumentando a eficiência operacional em mais de 30%.</li>
-                            <li>Substituí controles manuais por sistemas de monitoramento digital, garantindo 100% de
-                                rastreabilidade dos produtos.</li>
-                            <li>Garanti a conformidade sistêmica para auditorias externas, focando em melhoria contínua
-                                e padronização.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="work-item">
-                    <h3>Açai Paraense</h3>
-                    <p class="meta">Analista de Qualidade / Assistente Almoxarifado (Fev 2021 - Jan 2022)</p>
-                    <div class="desc">
-                        <p><strong>Analista de qualidade Junior:</strong> Atuou como assistente direto da gerência e do
-                            analista de qualidade, auxiliando na organização da rotina do setor. Responsável pela coleta
-                            e preenchimento de planilhas de monitoramento, garantindo que os dados da produção fossem
-                            devidamente arquivados. Tive a oportunidade de ser o responsável pela conformidade dos
-                            produtos e a conferência de normas de higiene na unidade.</p>
-                        <p><strong>Assistente de Almoxarifado:</strong> Tempo integral (fev de 2021 - jun de 2021).</p>
-                    </div>
-                </div>
             </div>
 
             <label for="work-toggle" class="toggle-label"></label>
         </div>
 
         <div class="posts-section" id="posts-container" style="display: none;">
-            <h2>* posts (tabnews)</h2>
+            <h2 data-i18n="section-posts">* posts (tabnews)</h2>
             <div class="posts-list" id="posts-list">
                 <!-- Posts will be loaded here via JS -->
             </div>
         </div>
 
         <div class="education-section">
-            <h2>* education</h2>
+            <h2 data-i18n="section-education">* education</h2>
 
             <div class="education-item">
                 <h3>UNESP - Universidade Estadual Paulista</h3>
-                <p class="meta">Mestrado, Ciência da Computação (Fev 2026 – o momento)</p>
+                <p class="meta" data-i18n="edu-unesp-role">Mestrado, Ciência da Computação (Fev 2026 – o momento)</p>
             </div>
 
             <div class="education-item">
                 <h3>Faculdade Facint</h3>
-                <p class="meta">CST, Análise e Desenvolvimento de Sistemas (Set 2022 – Dez 2025)</p>
+                <p class="meta" data-i18n="edu-facint-role">CST, Análise e Desenvolvimento de Sistemas (Set 2022 – Dez
+                    2025)</p>
             </div>
 
             <div class="education-item">
                 <h3>Universidade do Estado do Pará - UEPA</h3>
-                <p class="meta">CST, Tecnologia e Processamento de Alimentos (Out 2020 – Jun 2022)</p>
+                <p class="meta" data-i18n="edu-uepa-role">CST, Tecnologia e Processamento de Alimentos (Out 2020 – Jun
+                    2022)</p>
             </div>
         </div>
 
         <div class="disclaimer">
-            <p>por que tão simples? é porque eu acho que o minimalismo está na moda!</p>
+            <p data-i18n="disclaimer-home">por que tão simples? é porque eu acho que o minimalismo está na moda!</p>
         </div>
     </div>
 
+    <script src="js/translations.js"></script>
+    <script src="js/i18n.js"></script>
     <script>
         fetch('data/posts.json')
             .then(response => response.json())
@@ -211,7 +174,7 @@
                     container.style.display = 'block';
 
                     posts.forEach(post => {
-                        const date = new Date(post.published_at).toLocaleDateString('pt-BR');
+                        const date = new Date(post.published_at).toLocaleDateString(document.documentElement.lang === 'en' ? 'en-US' : 'pt-BR');
                         const item = document.createElement('div');
                         item.className = 'work-item'; // Reusing work-item styles
                         item.innerHTML = `
