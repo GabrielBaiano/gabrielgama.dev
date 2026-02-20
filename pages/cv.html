@@ -134,11 +134,19 @@
 
             body {
                 padding: 0;
+                margin: 0;
             }
 
             @page {
                 size: A4;
-                margin: 2cm;
+                margin: 0;
+                /* Remove as margens padrão do navegador que causam o header/footer */
+            }
+
+            .container {
+                padding: 2cm;
+                /* Adiciona a margem interna para o conteúdo não ficar colado na borda */
+                max-width: none;
             }
         }
     </style>
