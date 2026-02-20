@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Gabriel Nascimento Gama</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.5;
+            color: #1a1a1a;
+            margin: 0;
+            padding: 40px;
+            background-color: white;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            border-bottom: 2px solid #1a1a1a;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 28pt;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            font-size: 14pt;
+            color: #444;
+            margin-top: 5px;
+        }
+
+        .contact-info {
+            margin-top: 10px;
+            font-size: 10pt;
+            color: #666;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: 14pt;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .item {
+            margin-bottom: 15px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 3px;
+        }
+
+        .item-title {
+            font-weight: bold;
+            font-size: 11pt;
+        }
+
+        .item-date {
+            font-size: 9pt;
+            color: #666;
+        }
+
+        .item-subtitle {
+            font-style: italic;
+            font-size: 10pt;
+            color: #444;
+            margin-bottom: 5px;
+        }
+
+        .item-desc {
+            font-size: 10pt;
+            margin: 0;
+            padding-left: 0;
+            list-style-type: none;
+        }
+
+        .item-desc li {
+            position: relative;
+            padding-left: 15px;
+            margin-bottom: 3px;
+        }
+
+        .item-desc li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #1a1a1a;
+        }
+
+        .print-btn-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+
+        .print-btn {
+            padding: 10px 20px;
+            background: #1a1a1a;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            font-weight: bold;
+        }
+
+        @media print {
+            .print-btn-container {
+                display: none;
+            }
+
+            body {
+                padding: 0;
+            }
+
+            @page {
+                size: A4;
+                margin: 2cm;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="print-btn-container">
+        <button class="print-btn" onclick="window.print()">IMPRIMIR / SALVAR PDF</button>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Gabriel Nascimento Gama</h1>
+            <div class="subtitle">Desenvolvedor Front-End Pleno</div>
+            <div class="contact-info">
+                <span>📍 São Paulo, Brasil</span>
+                <span>📧 gabrielgamanascimento@gmail.com</span>
+                <span>🔗 linkedin.com/in/gabriel-gama-6301633b2/</span>
+                <span>💻 github.com/GabrielBaiano</span>
+            </div>
+        </header>
+
+        <section>
+            <h2>Resumo Profissional</h2>
+            <p style="font-size: 10pt; margin: 0;">
+                Desenvolvedor Front-End com mais de 4 anos de experiência atuando em ambientes corporativos e projetos
+                freelance.
+                Especialista em criar interfaces modernas, responsivas e orientadas ao cliente, com sólido conhecimento
+                em
+                React, Next.js, TypeScript e ecossistema mobile.
+            </p>
+        </section>
+
+        <section>
+            <h2>Experiência Profissional</h2>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Flash</span>
+                    <span class="item-date">Jun 2025 – Presente</span>
+                </div>
+                <div class="item-subtitle">Desenvolvedor Front-end Pleno</div>
+                <ul class="item-desc">
+                    <li>Atuação como desenvolvedor front-end pleno em tempo integral.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Agência YellowHood</span>
+                    <span class="item-date">Out 2025 – Fev 2026</span>
+                </div>
+                <div class="item-subtitle">Desenvolvedor Front-end Pleno (Consultor)</div>
+                <ul class="item-desc">
+                    <li>Definição da arquitetura e estruturação do Front-end do produto principal da empresa.</li>
+                    <li>Desenvolvimento de interfaces modernas e responsivas utilizando React/Next.js e TypeScript.</li>
+                    <li>Levantamento de requisitos e alinhamento de expectativas com stakeholders.</li>
+                    <li>Consultoria na escolha de bibliotecas, ferramentas de estilização e padrões de gerenciamento de
+                        estado.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Compass UOL</span>
+                    <span class="item-date">Out 2024 – Abr 2025</span>
+                </div>
+                <div class="item-subtitle">Estágio Desenvolvedor Mobile</div>
+                <ul class="item-desc">
+                    <li>Capacitação intensiva em React Native e TypeScript para desenvolvimento mobile.</li>
+                    <li>Desenvolvimento de projetos práticos (labs) focando em interfaces e navegação.</li>
+                    <li>Aprendizado do ciclo de vida mobile, consumo de APIs e tipagem segura.</li>
+                    <li>Uso de metodologias ágeis e ferramentas de versionamento em ambiente corporativo.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Educação</h2>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">UNESP - Universidade Estadual Paulista</span>
+                    <span class="item-date">Fev 2026 – o momento</span>
+                </div>
+                <div class="item-subtitle">Mestrado, Ciência da Computação</div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Faculdade Facint</span>
+                    <span class="item-date">Set 2022 – Dez 2035</span>
+                </div>
+                <div class="item-subtitle">CST, Análise e Desenvolvimento de Sistemas</div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Universidade do Estado do Pará - UEPA</span>
+                    <span class="item-date">Out 2020 – Jun 2022</span>
+                </div>
+                <div class="item-subtitle">CST, Tecnologia e Processamento de Alimentos</div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
