@@ -35,7 +35,7 @@ async function fetchTabNewsPosts() {
 async function sync() {
     console.log('Starting sync...');
     const db = await initDb();
-    
+
     try {
         const posts = await fetchTabNewsPosts();
         console.log(`Fetched ${posts.length} posts from TabNews.`);
